@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -144,7 +145,7 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form method="post" action="https://script.google.com/macros/s/AKfycbwENoelSURVe4Odto4UBOFTcDFrqaKn8o3GF8-J/exec">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -159,6 +160,12 @@
 											<textarea name="message" id="message" rows="6"></textarea>
 										</div>
 									</div>
+
+									<div class="g-recaptcha" data-sitekey="6LeWdLMZAAAAAN-R8krj2LoSeiyTzIgP_K0KFbJF"></div>
+									<br/>
+									<input type="submit" value="Submit">	
+
+
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="primary" /></li>
 										<li><input type="reset" value="Clear" /></li>
