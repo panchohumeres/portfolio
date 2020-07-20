@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!--
+	Lens by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Lens by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload-0 is-preload-1 is-preload-2">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Eigencities</h1>
+						<p>R&D project funded by the Scientific and Technological Development Support Fund <a href="https://www.conicyt.cl/fondef/lineas-de-programa/instrumentos-pasados/i-d/">FONDEF</a> of the Chilean Government. 200 K+ US$ in funding for two-year project at <a href="https://www.uach.cl/">Universidad Austral de Chile</a> in collaboration with <a href="https://www.inria.cl/es">INRIA Chile</a>, Telefónica R+D Unit, and <a href="https://mtt.gob.cl/pyd/unidad-de-ciudades-inteligentes">Smart Cities Unit</a> Unit at the Ministry of Transportation and Telecommunications </p>
+
+					</header>
+
+				<!-- Thumbnail -->
+					<section id="thumbnails">
+
+						{% for item in tags %}
+								
+						<article>
+							<a class="thumbnail" href="{{item.full}}" data-position="left center"><img src="{{item.thumb}}" alt="" /></a>
+							<h2>{{item.Title}}</h2>
+							<p>{{item.caption}}</p>
+                        </article>
+
+                        {% endfor %} 
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
